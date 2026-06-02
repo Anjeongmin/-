@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-kr); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; display:flex; flex-direction:column; gap:18px; }
+  .group { display:flex; flex-direction:column; gap:9px; }
+  .gtitle { font-family: var(--font-display); font-size:11px; font-weight:600; letter-spacing:0.04em; color:var(--gray-400); text-transform:uppercase; }
+  .row { display:flex; gap:10px; }
+  .pill { display:flex; align-items:center; gap:8px; padding:7px 12px; border-radius:8px; font-size:12.5px; font-weight:600; }
+  .dot { width:14px; height:14px; border-radius:50%; flex:none; }
+  .field { display:flex; align-items:center; gap:8px; font-size:11.5px; color:var(--gray-500); }
+  .fb { width:26px; height:18px; border-radius:4px; border:1px solid rgba(0,0,0,0.08); flex:none; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="group">
+      <span class="gtitle">Semantic · status</span>
+      <div class="row">
+        <span class="pill" style="background:var(--tomato-50); color:var(--tomato-500);"><span class="dot" style="background:var(--tomato-500)"></span>Danger / 강조</span>
+        <span class="pill" style="background:#E8F7F2; color:#2E9E85;"><span class="dot" style="background:var(--mint-500)"></span>Success</span>
+        <span class="pill" style="background:#EAF2FE; color:var(--blue-500);"><span class="dot" style="background:var(--blue-500)"></span>Info</span>
+        <span class="pill" style="background:var(--gray-100); color:var(--gray-500);"><span class="dot" style="background:var(--gray-400)"></span>Neutral</span>
+      </div>
+    </div>
+    <div class="group">
+      <span class="gtitle">Form-kit specifics</span>
+      <div style="display:flex; gap:22px; flex-wrap:wrap;">
+        <span class="field"><span class="fb" style="background:var(--field-bg)"></span> field-bg #FCFCFC</span>
+        <span class="field"><span class="fb" style="background:var(--field-bg); border-color:var(--field-border)"></span> field-border #EBEBEB</span>
+        <span class="field"><span class="fb" style="background:var(--btn-fill)"></span> btn-fill #333333</span>
+        <span class="field"><span class="fb" style="background:var(--placeholder)"></span> placeholder #AAAAAA</span>
+        <span class="field"><span class="fb" style="background:var(--surface-faint)"></span> surface #FAFAFA</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

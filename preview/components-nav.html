@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  body { margin: 0; font-family: var(--font-kr); background: var(--white); color: var(--ink); }
+  .card { padding: 24px 30px; display:flex; flex-direction:column; gap:20px; }
+  .lab { font-family: var(--font-display); font-size:11px; font-weight:600; letter-spacing:0.04em; color:var(--gray-400); text-transform:uppercase; }
+  /* header */
+  .hdr { width:375px; height:56px; display:flex; align-items:center; justify-content:space-between; padding:0 20px; border-bottom:1px solid var(--gray-100); }
+  .hdr .ti { font-family:var(--font-display); font-weight:700; font-size:18px; }
+  .hdr i { color:var(--tomato-500); }
+  /* tabs */
+  .tabs { width:375px; display:flex; padding:0 20px; gap:0; border-bottom:1px solid var(--gray-100); }
+  .tab { flex:1; text-align:center; padding:10px 0; font-size:15px; color:var(--gray-400); position:relative; }
+  .tab.on { color:var(--tomato-500); font-weight:700; }
+  .tab.on::after { content:""; position:absolute; left:18%; right:18%; bottom:-1px; height:2px; background:var(--tomato-500); border-radius:2px; }
+  /* bottom nav */
+  .nav { width:375px; height:64px; display:flex; align-items:center; justify-content:space-around; border:1px solid var(--gray-100); border-radius:14px; position:relative; background:#fff; }
+  .ni { display:flex; flex-direction:column; align-items:center; gap:3px; color:var(--gray-400); font-family:var(--font-display); font-size:10px; }
+  .ni.on { color:var(--tomato-500); }
+  .fab { width:54px; height:54px; border-radius:50%; background:var(--tomato-500); color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-card); margin-top:-22px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <div class="lab" style="margin-bottom:8px">Header</div>
+      <div class="hdr"><i data-lucide="chevron-left"></i><span class="ti">분석 결과</span><i data-lucide="share-2"></i></div>
+    </div>
+    <div>
+      <div class="lab" style="margin-bottom:8px">Tabs</div>
+      <div class="tabs"><span class="tab">종합</span><span class="tab on">감정</span><span class="tab">표현</span><span class="tab">흐름</span></div>
+    </div>
+    <div>
+      <div class="lab" style="margin-bottom:8px">Bottom navigation · center FAB</div>
+      <div class="nav">
+        <span class="ni on"><i data-lucide="home"></i>홈</span>
+        <span class="ni"><i data-lucide="list"></i>감정 기록</span>
+        <span class="fab"><i data-lucide="mic"></i></span>
+        <span class="ni"><i data-lucide="captions"></i>자막</span>
+        <span class="ni"><i data-lucide="rotate-ccw"></i>돌아보기</span>
+      </div>
+    </div>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

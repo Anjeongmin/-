@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-kr); background: var(--white); color: var(--ink); }
+  .card { padding: 24px 30px; display:flex; gap:20px; align-items:stretch; }
+  .col { display:flex; flex-direction:column; gap:14px; flex:1; }
+  /* distribution */
+  .dist { display:flex; flex-direction:column; gap:10px; }
+  .drow .top { display:flex; justify-content:space-between; font-size:14px; margin-bottom:6px; }
+  .drow .top b { font-family:var(--font-display); font-weight:700; }
+  .track { height:8px; border-radius:999px; background:var(--gray-100); overflow:hidden; }
+  .fill { height:100%; border-radius:999px; background:var(--tomato-500); }
+  /* highlight */
+  .hl { background:var(--surface-faint); border:1px solid var(--tomato-400); border-radius:var(--radius-md); padding:14px 16px; }
+  .hl .hd { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .hl .tg { background:var(--tomato-500); color:#fff; font-size:12px; font-weight:600; padding:3px 9px; border-radius:6px; }
+  .hl .tm { font-family:var(--font-display); color:var(--tomato-500); font-weight:700; font-size:14px; }
+  .hl p { margin:0; font-size:13.5px; color:var(--gray-700); line-height:1.55; }
+  /* practice CTA */
+  .cta { background:var(--tomato-500); border-radius:var(--radius-2xl); padding:18px 18px; color:#fff; display:flex; align-items:center; justify-content:space-between; }
+  .cta .sub { font-size:12px; opacity:.85; }
+  .cta .ti { font-weight:700; font-size:17px; margin-top:3px; }
+  .cta .play { width:46px; height:46px; border-radius:50%; background:rgba(255,255,255,.25); display:flex; align-items:center; justify-content:center; font-size:18px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="col">
+      <div class="dist">
+        <div class="drow"><div class="top"><span>친절함 (Friendly)</span><b>70%</b></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="drow"><div class="top"><span>차분함 (Calm)</span><b>20%</b></div><div class="track"><div class="fill" style="width:20%"></div></div></div>
+        <div class="drow"><div class="top"><span>불안함 (Anxious)</span><b>10%</b></div><div class="track"><div class="fill" style="width:10%"></div></div></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="hl">
+        <div class="hd"><span class="tg">긍정적 전환</span><span class="tm">02:05</span></div>
+        <p>대안 제시 이후 고객의 호흡이 안정되고 어조가 부드러워졌습니다.</p>
+      </div>
+      <div class="cta">
+        <div><div class="sub">맞춤형 연습 제안</div><div class="ti">거절 상황 대응 연습</div></div>
+        <div class="play">▶</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

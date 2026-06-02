@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-display); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; }
+  .grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
+  .sw { display: flex; flex-direction: column; gap: 7px; }
+  .chip { height: 56px; border-radius: 10px; border: 1px solid rgba(0,0,0,0.06); }
+  .name { font-size: 11px; font-weight: 600; color: var(--ink); }
+  .hex { font-size: 10px; color: var(--gray-400); font-variant-numeric: tabular-nums; }
+  .accents { display: flex; gap: 10px; margin-top: 16px; }
+  .acc { flex: 1; display: flex; flex-direction: column; gap: 7px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grid">
+      <div class="sw"><div class="chip" style="background:var(--tomato-700)"></div><span class="name">700</span><span class="hex">#E4624E</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-600)"></div><span class="name">600</span><span class="hex">#E75036</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-500); box-shadow:0 0 0 2px var(--tomato-500), 0 0 0 4px var(--white) inset;"></div><span class="name">500 ●</span><span class="hex">#FF3639</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-400)"></div><span class="name">400</span><span class="hex">#FF6363</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-300)"></div><span class="name">300</span><span class="hex">#FFB4B4</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-100)"></div><span class="name">100</span><span class="hex">#FFE3E3</span></div>
+      <div class="sw"><div class="chip" style="background:var(--tomato-50)"></div><span class="name">50</span><span class="hex">#FFF1F1</span></div>
+    </div>
+    <div class="accents">
+      <div class="acc"><div class="chip" style="background:var(--leaf-500)"></div><span class="name">Leaf 500 · 스템</span><span class="hex">#2FA84F</span></div>
+      <div class="acc"><div class="chip" style="background:var(--mint-500)"></div><span class="name">Mint 500 · success</span><span class="hex">#5DBFA8</span></div>
+      <div class="acc"><div class="chip" style="background:var(--blue-500)"></div><span class="name">Blue 500 · info</span><span class="hex">#4D90F8</span></div>
+    </div>
+  </div>
+</body>
+</html>

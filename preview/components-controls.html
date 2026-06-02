@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-kr); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; display:flex; flex-direction:column; gap:18px; }
+  .grp { display:flex; align-items:center; gap:14px; flex-wrap:wrap; }
+  .gtitle { font-family: var(--font-display); font-size:11px; font-weight:600; letter-spacing:0.04em; color:var(--gray-400); text-transform:uppercase; width:64px; flex:none; }
+  /* radio */
+  .radio { width:20px; height:20px; border-radius:50%; background:var(--btn-fill); display:flex; align-items:center; justify-content:center; }
+  .radio i { width:10px; height:10px; border-radius:50%; background:#fff; }
+  .radio.off { background:#fff; border:1.5px solid var(--gray-300); }
+  .radio.off i { display:none; }
+  /* checkbox */
+  .check { width:20px; height:20px; border-radius:2px; border:1.5px solid var(--black); background:#fff; display:flex; align-items:center; justify-content:center; }
+  .check.on { background:var(--btn-fill); border-color:var(--btn-fill); }
+  .check.on::after { content:"✓"; color:#fff; font-size:13px; line-height:1; }
+  label.opt { display:flex; align-items:center; gap:8px; font-size:14px; color:var(--gray-700); }
+  /* tags */
+  .tag { border-radius:var(--radius-sm); font-size:14px; padding:3px 11px; display:inline-flex; }
+  .tag-line { background:#fff; border:1px solid var(--field-border); color:var(--black); }
+  .tag-neg { background:var(--surface-faint); border:1px solid var(--tomato-400); color:var(--tomato-500); font-weight:600; border-radius:6px; }
+  .tag-pos { background:var(--tomato-500); color:#fff; font-weight:600; border-radius:6px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grp">
+      <span class="gtitle">Radio</span>
+      <label class="opt"><span class="radio"><i></i></span> 선택됨</label>
+      <label class="opt"><span class="radio off"><i></i></span> 미선택</label>
+      <span class="gtitle" style="width:auto; margin-left:12px;">Check</span>
+      <label class="opt"><span class="check on"></span> 동의</label>
+      <label class="opt"><span class="check"></span> 미동의</label>
+    </div>
+    <div class="grp">
+      <span class="gtitle">Tags</span>
+      <span class="tag tag-line">등록</span>
+      <span class="tag tag-line" style="color:var(--gray-400); border-style:dashed;">비활성</span>
+      <span class="tag tag-neg">부정적 기류</span>
+      <span class="tag tag-pos">긍정적 전환</span>
+    </div>
+  </div>
+</body>
+</html>

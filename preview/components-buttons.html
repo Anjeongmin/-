@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-form); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; display:flex; flex-direction:column; gap:16px; }
+  .grp { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+  .gtitle { font-family: var(--font-display); font-size:11px; font-weight:600; letter-spacing:0.04em; color:var(--gray-400); text-transform:uppercase; width:64px; flex:none; }
+  .btn { border-radius: var(--radius-sm); font-family: var(--font-form); font-weight:500; font-size:15px; display:inline-flex; align-items:center; justify-content:center; gap:8px; cursor:default; }
+  .reg { height:48px; padding:0 22px; }
+  .sm  { height:34px; padding:0 16px; font-size:14px; }
+  .fill-black { background:var(--btn-fill); color:var(--white); }
+  .fill-red { background:var(--tomato-500); color:var(--white); }
+  .fill-blue { background:var(--blue-500); color:var(--white); }
+  .line-black { background:var(--white); color:var(--black); border:1px solid var(--black); }
+  .line-red { background:var(--white); color:var(--tomato-700); border:1px solid var(--tomato-700); }
+  .disabled { background:var(--gray-100); color:var(--gray-400); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grp">
+      <span class="gtitle">Regular<br>48px</span>
+      <button class="btn reg fill-red">부족한 표현 연습하기</button>
+      <button class="btn reg fill-black">저장하기</button>
+      <button class="btn reg line-black">취소</button>
+      <button class="btn reg fill-blue">파랑 액션</button>
+    </div>
+    <div class="grp">
+      <span class="gtitle">Small<br>34px</span>
+      <button class="btn sm fill-black">등록</button>
+      <button class="btn sm line-black">수정</button>
+      <button class="btn sm line-red">삭제</button>
+      <button class="btn sm disabled">비활성</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-form); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; display:flex; flex-direction:column; gap:14px; }
+  .lab { font-family: var(--font-display); font-size:11px; font-weight:600; letter-spacing:0.04em; color:var(--gray-400); text-transform:uppercase; }
+  .field { width: 360px; height:48px; border-radius:var(--radius-sm); background:var(--field-bg); border:1px solid var(--field-border); display:flex; align-items:center; padding:0 14px 0 16px; font-size:15px; }
+  .ph { color:var(--placeholder); }
+  .val { color:var(--ink); }
+  .field.focus { border-color:var(--tomato-500); box-shadow:0 0 0 3px var(--tomato-50); }
+  .arrow { margin-left:auto; color:var(--gray-400); }
+  .two { display:flex; gap:18px; align-items:flex-end; flex-wrap:wrap; }
+  .stack { display:flex; flex-direction:column; gap:7px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="two">
+      <div class="stack">
+        <span class="lab">Text input</span>
+        <div class="field"><span class="ph">플레이스 홀더를 입력해주세요</span></div>
+      </div>
+      <div class="stack">
+        <span class="lab">Filled · focus</span>
+        <div class="field focus"><span class="val">안정민 상담원</span></div>
+      </div>
+    </div>
+    <div class="two">
+      <div class="stack">
+        <span class="lab">Dropdown</span>
+        <div class="field"><span class="ph">선택해주세요</span><span class="arrow">▾</span></div>
+      </div>
+      <div class="stack">
+        <span class="lab">Dropdown · inactive</span>
+        <div class="field" style="background:var(--gray-50); color:var(--gray-400)"><span>비활성</span><span class="arrow">▾</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-display); background: var(--white); color: var(--ink); }
+  .card { padding: 22px 30px; display:flex; align-items:center; gap:28px; }
+  .lock { display:flex; align-items:center; gap:14px; }
+  .lock img { width:78px; height:78px; object-fit:contain; }
+  .name { font-weight:800; font-size:30px; letter-spacing:-0.02em; color:var(--tomato-500); }
+  .name span { color:var(--ink); }
+  .tagline { font-family:var(--font-kr); font-size:13px; color:var(--gray-500); margin-top:2px; }
+  .states { display:flex; gap:20px; margin-left:auto; }
+  .st { display:flex; flex-direction:column; align-items:center; gap:6px; }
+  .st img { width:64px; height:64px; object-fit:contain; }
+  .st span { font-family:var(--font-kr); font-size:11px; color:var(--gray-400); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="lock">
+      <img src="../assets/character.png" alt="Tomato mascot">
+      <div>
+        <div class="name">토마토<span>.</span></div>
+        <div class="tagline">통화 감정 코칭 · Call-emotion coaching</div>
+      </div>
+    </div>
+    <div class="states">
+      <div class="st"><img src="../assets/character.png" alt="happy">  <span>행복 / 긍정</span></div>
+      <div class="st"><img src="../assets/illustration.png" alt="worried"><span>불안 / 부정</span></div>
+    </div>
+  </div>
+</body>
+</html>

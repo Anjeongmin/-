@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; font-family: var(--font-display); background: var(--white); color: var(--ink); }
+  .card { padding: 26px 30px; }
+  .grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 8px; }
+  .sw { display: flex; flex-direction: column; gap: 6px; }
+  .chip { height: 58px; border-radius: 9px; border: 1px solid rgba(0,0,0,0.06); }
+  .name { font-size: 10.5px; font-weight: 600; color: var(--ink); }
+  .hex { font-size: 9.5px; color: var(--gray-400); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="grid">
+      <div class="sw"><div class="chip" style="background:var(--gray-900)"></div><span class="name">900</span><span class="hex">#111827</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-700)"></div><span class="name">700</span><span class="hex">#374151</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-600)"></div><span class="name">600</span><span class="hex">#4B5563</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-500)"></div><span class="name">500</span><span class="hex">#6B7280</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-400)"></div><span class="name">400</span><span class="hex">#9CA3AF</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-300)"></div><span class="name">300</span><span class="hex">#D1D5DB</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-200)"></div><span class="name">200</span><span class="hex">#E5E7EB</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-100)"></div><span class="name">100</span><span class="hex">#F3F4F6</span></div>
+      <div class="sw"><div class="chip" style="background:var(--gray-50)"></div><span class="name">50</span><span class="hex">#F9FAFB</span></div>
+    </div>
+    <div style="display:flex; gap:24px; margin-top:18px; font-size:12px; color:var(--gray-500);">
+      <span><b style="color:var(--ink)">Text</b> &nbsp;900 primary · 600 secondary · 400 muted</span>
+      <span><b style="color:var(--ink)">Structure</b> &nbsp;200 borders · 100 fills · 50 surfaces</span>
+    </div>
+  </div>
+</body>
+</html>
